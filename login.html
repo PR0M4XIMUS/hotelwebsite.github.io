@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/bg2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form {
+            background-color: #ffffff;
+            border: 3px solid #f1f1f1;
+            border-radius: 7px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            margin-top: 220px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #e0b973;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.7s ease-in-out;
+        }
+        button:hover {
+            background-color: #ffa908;
+        }
+        .container {
+            padding: 16px;
+        }
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<form method="post" action="login.php">
+    <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+        <button type="submit" id="loginBtn">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+        <span class="psw">Forgot <a href="https://youtu.be/dQw4w9WgXcQ">password?</a> or<a href="register.html"> Register</a></span>
+
+    </div>
+</form>
+
+<script>
+    const loginBtn = document.getElementById("loginBtn");
+    loginBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        if (username === "" || password === "") {
+            alert("Please enter your username and password.");
+        } else if (!validateUsername(username)) {
+            alert("Username must contain only letters and numbers, and be between 4 and 20 characters long.");
+        } else if (!validatePassword(password)) {
+            alert("Password must contain at least one uppercase letter, one lowercase letter, one digit, and be at least 8 characters long.");
+        } else if (username !== "promaximus" || password !== "Ady78792860") {
+            alert("Invalid username or password. Please try again.");
+        } else {
+            alert("Login successful!");
+            window.location.href = "index.html";
+
+        }
+    });
+
+    function validateUsername(username) {
+        const regex = /^[a-zA-Z0-9]{4,20}$/;
+        return regex.test(username);
+    }
+
+    function validatePassword(password) {
+        const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+        return regex.test(password);
+    }
+
+</script>
+
+</body>
+</html>

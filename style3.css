@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #14274a;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: 105%;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 200px;
+  height: 90px;
+  background-color: #e0b973;
+  border-radius: 0 0 30px 30px;
+  align-content: center;
+  margin-right: 750px;
+}
+
+.li1 {
+  font-size: 27px;
+  letter-spacing: 3px;
+  font-family: "Adobe Garamond Pro";
+}
+
+.li2 {
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-family: "Adobe Garamond Pro";
+  padding-left: 10%;
+}
+
+nav {
+  background: #14274a;
+  width: 100%;
+  height: 9%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  margin: 0;
+  padding-left: 160px;
+  z-index: 100;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #e0b973;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 110px;
+}
+
+main {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  top: 100px;
+  position: relative;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.bg h1 {
+  position: absolute;
+  font-family: "Adobe Garamond Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  color: #14274a;
+  text-align: left;
+  margin-left: 200px;
+}
+
+.bg h4 {
+  position: absolute;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #14274a;
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+main table {
+  position: relative;
+  border-spacing: 230px;
+  margin-left: 80px;
+}
+
+main table tr td ul li {
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: #14274a;
+}
+
+.spacing {
+    line-height: 49px;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+}
+
+.name {
+  width: 400px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.emai {
+  width: 400px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.mes {
+  width: 400px;
+  height: 100px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.but {
+  background-color: #ffa908;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  background-color: #14274a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+.container2 table {
+  color: #fff;
+}
+
+.container2 .table tr td ul li {
+  margin-right: 80px;
+  margin-left: 80px;
+  list-style: none;
+}
+
+.container2 .table tr td ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.luxury {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+}
+
+.hotels {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.6em;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.inf {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 9px;
+}
+
+.in {
+  border: 2px solid #e0b973;
+  background-color: #14274a;
+  color: #fff;
+  padding: 8px;
+}
+
+.out {
+  border: 2px solid #e0b973;
+  background-color: #e0b973;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  margin-left: -4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.out:hover {
+  border: 2px solid #e0b973;
+  background-color: #14274a;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  margin-left: -4px;
+}
