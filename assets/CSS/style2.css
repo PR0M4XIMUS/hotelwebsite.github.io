@@ -1,8 +1,10 @@
 body {
-  background: url(images/bg2.png);
+  background: url(bg3.png);
   margin: 0;
   background-repeat: no-repeat;
   background-size: 105%;
+  width: 100%;
+  height: 100%;
 }
 
 html {
@@ -28,7 +30,7 @@ html {
   font-size: 18px;
   letter-spacing: 5px;
   font-family: "Adobe Garamond Pro";
-  padding-left: 13px;
+  padding-left: 10%;
 }
 
 nav {
@@ -154,50 +156,101 @@ a.button {
 footer {
   background: #fff;
   width: 100%;
-  height: 575vh;
+  height: 380vh;
   top: 1000px;
   position: relative;
 }
 
 .bg {
   width: 100%;
-  height: 575vh;
+  height: 380vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.ex {
-  width: 1290px;
-  height: 760px;
-}
-
 .bg h1 {
   position: absolute;
-  top: 20px;
+  top: 40px;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 50px;
   line-height: 72px;
   text-align: center;
   letter-spacing: 0.05em;
   color: #14274a;
 }
 
-.tabl {
-  margin-left: 185px;
-  margin-right: 185px;
-  margin-top: -100px;
-  border-collapse: separate;
-  border-spacing: 0 80px;
-}
-
-
-.subtitle {
+.bg h5 {
+  position: absolute;
+  top: 135px;
   font-weight: 400;
   font-size: 25px;
+  line-height: 29px;
   text-align: center;
   color: #14274a;
+  padding-left: 75px;
+  padding-right: 75px;
 }
+
+.container3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 1200px;
+}
+
+.bluecontainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #14274a;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 73px;
+  color: #ffffff;
+  width: 1200px;
+  height: 75px;
+  margin-top: 815px;
+}
+
+.morecontainer {
+  border: 3px solid #14274a;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffce5;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+  width: 1194px;
+  height: 80px;
+  margin-top: 975px;
+  text-decoration: none;
+  transition: 0.7s ease-in-out;
+}
+
+
+.morecontainer:hover {
+  background-color: #ffa908;
+  border-radius: 0 0 35px 35px;
+}
+
+img {
+  width: 1200px;
+  height: 740px;
+}
+
+.tabl {
+  border-collapse: separate;
+  border-spacing: 0 1000px;
+  margin-top: -1400px;
+  margin-right: 72.4%;
+}
+
 
 .container2 {
   position: absolute;
@@ -212,13 +265,12 @@ footer {
 
 .container2 table {
   color: #fff;
-  position: absolute;   
 }
 
 .container2 table tr td ul li {
-  list-style: none;
   margin-right: 80px;
   margin-left: 80px;
+  list-style: none;
 }
 
 .container2 table tr td ul li a {
@@ -278,3 +330,5 @@ footer {
   padding: 8px;
   margin-left: -4px;
 }
+
+
