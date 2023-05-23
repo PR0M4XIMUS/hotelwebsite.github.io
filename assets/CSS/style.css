@@ -1,5 +1,5 @@
 body {
-  background: url(bg.png);
+  background-image: url(../images/bg.png);
   margin: 0;
   background-repeat: no-repeat;
   background-size: 105%;
@@ -23,13 +23,11 @@ html {
 .li1 {
   font-size: 27px;
   letter-spacing: 3px;
-  font-family: "Adobe Garamond Pro";
 }
 
 .li2 {
   font-size: 18px;
   letter-spacing: 5px;
-  font-family: "Adobe Garamond Pro";
   padding-left: 10%;
 }
 
@@ -67,7 +65,6 @@ nav ul li a:hover {
   top: 5%;
   display: flex;
   position: fixed;
-  align-items: left;
   padding: 165px 115px;
 }
 
@@ -110,12 +107,11 @@ nav ul li a:hover {
   border-radius: 10px;
   height: 55px;
   width: 200px;
-  padding: 10px auto;
+  padding: 5px 5px;
   font-size: 25px;
   text-align: center;
   right: 44%;
   top: 620px;
-  font-size: 25px;
   line-height: 50px;
 }
 
@@ -134,7 +130,7 @@ a.button {
   width: 5vw;
   border-style: solid;
   border-color: white;
-  border-width: 0px 3px 3px 0px;
+  border-width: 0 3px 3px 0;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
 }
@@ -195,12 +191,12 @@ td img {
   width: 804px;
   height: 514px;
   margin-top: 80px;
-  box-shadow: 5px 5px 5px 0px rgba(54, 54, 54, 0.799);
+  box-shadow: 5px 5px 5px 0 rgba(54, 54, 54, 0.799);
   transition: box-shadow 0.7s ease-in-out;
 }
 
 img:hover {
-  box-shadow: 7px 7px 7px 0px rgba(0, 0, 0, 0.899);
+  box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.899);
 }
 
 .h {
@@ -234,8 +230,7 @@ img:hover {
   float: left;
   font-size: 20px;
   margin-top: 25px;
-  box-shadow: 5px 5px 5px 0px rgba(54, 54, 54, 0.799);
-  transition: background-color 0.7s ease-in-out;
+  box-shadow: 5px 5px 5px 0 rgba(54, 54, 54, 0.799);
   transition: box-shadow 0.7s ease-in-out;
 }
 
@@ -245,7 +240,7 @@ a.b {
 
 .b:hover {
   background-color: #ffa908;
-  box-shadow: 7px 7px 7px 0px rgba(54, 54, 54, 0.886);
+  box-shadow: 7px 7px 7px 0 rgba(54, 54, 54, 0.886);
 }
 
 .vl {
