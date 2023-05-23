@@ -33,7 +33,7 @@
                 <h1>WE ARE HERE FOR YOU</h1>
                 <h4>At Luxury Hotels, we take our customers seriously. Do you have any enquiries, compaints or
                     requests,<br>
-                    please forward it to our support desk and we will get back to you as soon as possible.</h4>
+                    please forward it to our support desk, and we will get back to you as soon as possible.</h4>
                 <table>
                     <tr>
                         <td>
@@ -47,7 +47,6 @@
                         </td>
                         <td>
                             <ul>
-                                <form>
                                 <li><label for="name">Name:</label></li>
                                 <li>
                                     <input class="name" type="text" id="name" name="name" required>
@@ -63,7 +62,6 @@
                                 <li>
                                     <input class="but" type="submit" value="SUBMIT">
                                 </li>
-                                </form>
                             </ul>
                         </td>
                     </tr>
@@ -111,14 +109,16 @@
                       <ul>
                         <li class="info">Subscribe to our newsletter</li>
                         <li>
-                          <input
-                            class="in"
-                            type="email"
-                            name="email"
-                            value="Email Address"
-                            required
-                          />
-                          <input class="out" type="submit" value="OK" />
+                            <label>
+                                <input
+                                        class="in"
+                                        name="email"
+                                        required
+                                        type="email"
+                                        value="Email Address"
+                                />
+                            </label>
+                            <input class="out" type="submit" value="OK" />
                         </li>
                       </ul>
                     </td>
@@ -169,7 +169,7 @@
                 }
                 if (!messageField.checkValidity()) {
                     messageField.reportValidity();
-                    return;
+
                 }
             });
         </script>
