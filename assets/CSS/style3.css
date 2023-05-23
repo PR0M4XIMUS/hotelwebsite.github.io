@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: #14274a;
+  background-color: #14274a;
   margin: 0;
   background-repeat: no-repeat;
   background-size: 105%;
@@ -23,13 +23,11 @@ body {
 .li1 {
   font-size: 27px;
   letter-spacing: 3px;
-  font-family: "Adobe Garamond Pro";
 }
 
 .li2 {
   font-size: 18px;
   letter-spacing: 5px;
-  font-family: "Adobe Garamond Pro";
   padding-left: 10%;
 }
 
@@ -63,7 +61,7 @@ nav ul li a:hover {
 }
 
 .title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -89,7 +87,7 @@ main {
 
 .bg h1 {
   position: absolute;
-  font-family: "Adobe Garamond Pro";
+  font-family: "Adobe Garamond Pro", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -101,7 +99,7 @@ main {
 
 .bg h4 {
   position: absolute;
-  font-family: "Montserrat";
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -120,7 +118,7 @@ main table {
 
 main table tr td ul li {
   list-style: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -170,9 +168,8 @@ main table tr td ul li {
   color: black;
   padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
   cursor: pointer;
-  margin-left: 300px;
+  margin: 4px 2px 4px 300px;
 }
 
 
