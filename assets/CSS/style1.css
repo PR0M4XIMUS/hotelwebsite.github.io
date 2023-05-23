@@ -1,5 +1,5 @@
 body {
-  background: url(bg2.png);
+  background-image: url(../images/bg2.png);
   margin: 0;
   background-repeat: no-repeat;
   background-size: 105%;
@@ -21,13 +21,11 @@ html {
 .li1 {
   font-size: 27px;
   letter-spacing: 3px;
-  font-family: "Adobe Garamond Pro";
 }
 
 .li2 {
   font-size: 18px;
   letter-spacing: 5px;
-  font-family: "Adobe Garamond Pro";
   padding-left: 13px;
 }
 
@@ -65,7 +63,6 @@ nav ul li a:hover {
   top: 5%;
   display: flex;
   position: fixed;
-  align-items: left;
   padding: 165px 115px;
 }
 
@@ -108,12 +105,11 @@ nav ul li a:hover {
   border-radius: 10px;
   height: 55px;
   width: 200px;
-  padding: 10px auto;
+  padding: 5px 5px;
   font-size: 25px;
   text-align: center;
   right: 44%;
   top: 620px;
-  font-size: 25px;
   line-height: 50px;
 }
 
@@ -132,7 +128,7 @@ a.button {
   width: 5vw;
   border-style: solid;
   border-color: white;
-  border-width: 0px 3px 3px 0px;
+  border-width: 0 3px 3px 0;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
 }
